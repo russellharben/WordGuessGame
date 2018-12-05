@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta>
+    <title>
+        Word Guess Game
+    </title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Local CSS Style Sheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+
+    <!-- Bootstrap CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row marginTop10perc borderBlue">
+            <div class="col-md-2"></div>
+
+            <!-- Game box centered in screen -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center marginBottom25">Yellow Jacket Jeopardy!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5 borderRight padding20">
+
+                <h3>Use the keyboard to guess a letter!</h3>
+                <h4>
+                    1. If your letter is in the word, it shows up in the correct spot <br><br>
+                    2. Guess wrong and you're one step closer to losing! <br><br>
+                    3. Get 5 letters wrong and you lose. <br><br>
+                    4. Make a guess at the secret word any time.
+                </h4>
+
+            </div>
+            <div class="col-md-5 padding20">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center text-capitalize">Letter tracker!</h2>
+                    </div>
+                </div>
+                <div class="row marginTop10perc">
+                    <div class="col-md-12 text-center">
+                        <span id="letters"></span>
+                    </div>
+                </div>
+                <div class="row marginTop10perc">
+                    <div class="col-md-12 text-center">
+                        <span id="lettersWrong"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+    </div>
+
+    <audio id="dangerZone" src="assets/Kenny Loggins - Danger Zone(playvk.com).mp3" controls autoplay>
+        <p>If you are reading this your browser does not support the audio.</p>
+    </audio>
+
+    <script src="assets/javascript/game.js"></script>
+
+</body>

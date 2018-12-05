@@ -1,0 +1,47 @@
+body {
+    padding:0px;
+    margin:0px;
+    font-size:15px;
+    line-height:1.5em;
+    letter-spacing:.02em;
+    background-image:url("https://media1.tenor.com/images/0c01a73fc25f935e241bb25bc8950141/tenor.gif?itemid=3536921");
+    color:white;
+}
+
+h1 {
+    color:white;
+}
+
+.container {
+    background-color:black;
+    opacity:.65;
+    height:90vh !important;
+    margin-top:5vh;
+}
+
+.borderBlue {
+    border-bottom:2px solid skyblue;
+}
+
+.marginTop10perc {
+    margin-top:10%;
+}
+
+.marginBottom25 {
+    margin-bottom:25px;
+}
+
+.borderRight {
+    border-right:2px solid skyblue;
+}
+
+.padding20 {
+    padding:20px;
+}
+
+#dangerZone {
+    position:absolute;
+    bottom:0;
+    opacity:.6;
+    border-radius:0px !important;
+}
