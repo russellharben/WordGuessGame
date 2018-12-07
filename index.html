@@ -24,7 +24,7 @@
 
     <div class="container">
 
-        <div class="row marginTop10perc borderBlue">
+        <div class="row marginTop5perc ">
             <div class="col-md-2"></div>
 
             <!-- Game box centered in screen -->
@@ -32,22 +32,29 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1 class="text-center marginBottom25">Yellow Jacket Jeopardy!</h1>
+                        <h5 class="text-center marginBottom25">Word Bank Theme:</h5>
+                        <h3 class="text-center marginBottom25">"SPORTS & GAMES"</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
+            <div class="col-md-2 text-center">
+                <span id="guess" class="padding5 borderWhite">CLICK TO GUESS!</span>
+            </div>
         </div>
 
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-5 borderRight padding20">
 
-                <h3>Use the keyboard to guess a letter!</h3>
+                <h3>Instructions:</h3>
+                <br />
                 <h4>
-                    1. If your letter is in the word, it shows up in the correct spot <br><br>
-                    2. Guess wrong and you're one step closer to losing! <br><br>
-                    3. Get 5 letters wrong and you lose. <br><br>
-                    4. Make a guess at the secret word any time.
+                    1. Press a letter on the keyboard to guess that letter<br><br>
+                    2. If your letter is in the word, it will show up in the correct spot <br><br>
+                    3. Guess wrong and your letter will show up underneath the empty spaces! <br><br>
+                    4. Once you have as many incorrect guesses as the number of letters in the secret word, you lose! (i.e. if the word has
+                    5 letters, you lose after 5 incorrect guesses) <br><br>
+                    5. Make a guess at the secret word any time by clicking the box in the top right of the game board.
                 </h4>
 
             </div>
@@ -55,17 +62,17 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="text-center text-capitalize">Letter tracker!</h2>
+                        <h2 class="text-center text-capitalize">SCOREBOARD</h2>
+                    </div>
+                </div>
+                <div class="row marginTop10perc">
+                    <div class="col-md-12 text-center marginBottom25">
+                        <span class="large-font" id="letters"></span>
                     </div>
                 </div>
                 <div class="row marginTop10perc">
                     <div class="col-md-12 text-center">
-                        <span id="letters"></span>
-                    </div>
-                </div>
-                <div class="row marginTop10perc">
-                    <div class="col-md-12 text-center">
-                        <span id="lettersWrong"></span>
+                        <span class="large-font" id="lettersWrong"></span>
                     </div>
                 </div>
 
