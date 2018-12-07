@@ -6,6 +6,8 @@ $(document).ready(function () {
 
     var letterGuesses = [];
 
+    var wins = 0;
+
     // Get a random number
     var randomNum = Math.floor(Math.random() * words.length);
 
@@ -41,7 +43,6 @@ $(document).ready(function () {
             if (randomWord[i].toUpperCase() == choice) {
                 letterSpaces[i] = choice;
                 $("#letters").text(letterSpaces.join(""));
-
                 // not sure why this works the way it does - length gets smaller as letters are filled in
                 console.log($("#letters").text().length);
 
@@ -81,5 +82,6 @@ $(document).ready(function () {
         }
     })
 
+    
 
 });
