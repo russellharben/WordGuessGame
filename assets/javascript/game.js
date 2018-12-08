@@ -1,7 +1,18 @@
 $(document).ready(function () {
 
 
-    var words = ["baseball", "basketball", "football", "xbox", "playstation", "espn", "tennis", "nintendo", "twister", "monopoly"];
+    var words = [
+        "baseball",
+        "basketball",
+        "football",
+        "xbox",
+        "playstation",
+        "espn",
+        "tennis",
+        "nintendo",
+        "twister",
+        "monopoly"
+    ];
 
     var letterSpaces = [];
 
