@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     var words = ["baseball", "basketball", "football", "xbox", "playstation", "espn", "tennis", "nintendo", "twister", "monopoly"];
 
     var letterSpaces = [];
@@ -7,6 +8,8 @@ $(document).ready(function () {
     var letterGuesses = [];
 
     var wins = 0;
+
+
 
     // Get a random number
     var randomNum = Math.floor(Math.random() * words.length);
@@ -37,10 +40,17 @@ $(document).ready(function () {
         var x = e.keyCode;
         var choice = String.fromCharCode(x).toUpperCase();
 
+        // RegEx Checker
+        var validChar = /^[a-zA-Z]+$/;
+        console.log(validChar.test(choice) + " This is the regex test");
+
+        if(validChar.test(choice) === false){
+            alert("you need to choose a valid letter");
+        }
 
         // print a correct guess out to the screen in all the correct array positions
         for (i = 0; i < randomWord.length; i++) {
-            if (randomWord[i].toUpperCase() == choice) {
+             if (randomWord[i].toUpperCase() == choice) {
                 letterSpaces[i] = choice;
                 $("#letters").text(letterSpaces.join(""));
                 // not sure why this works the way it does - length gets smaller as letters are filled in
@@ -55,7 +65,7 @@ $(document).ready(function () {
         }
 
         // add an incorrect guess to the list of missed letters
-        if (randomWord.toUpperCase().indexOf(choice) < 0) {
+        if (randomWord.toUpperCase().indexOf(choice) < 0 && validChar.test(choice) === true) {
             $("#lettersWrong").append("<span>" + choice + " " + "</span>");
 
             //keep track of wrong guesses
@@ -82,6 +92,6 @@ $(document).ready(function () {
         }
     })
 
-    
+
 
 });
